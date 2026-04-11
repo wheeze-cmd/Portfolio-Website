@@ -183,24 +183,24 @@
                 <div class="input">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Your name" class="input-field" required>
+                        <input name="name" type="text" id="name" placeholder="Your name" class="input-field" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="...@gmail.com" class="input-field" required>
+                        <input name="email" type="email" id="email" placeholder="...@gmail.com" class="input-field" required>
                     </div>
                     <div class="form-group">
                         <label for="comp">Company Name</label>
-                        <input type="text" id="comp" placeholder="A Company.inc" class="input-field">
+                        <input name="company" type="text" id="comp" placeholder="A Company.inc" class="input-field">
                     </div>
                     <div class="form-group">
                         <label for="tel">Contact Number</label>
-                        <input type="telephone" id="tel" placeholder="+63 / 02 123 4567 " class="input-field" required>
+                        <input name="tel" type="telephone" id="tel" placeholder="+63 / 02 123 4567 " class="input-field" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="msg">Send a message</label>
-                    <textarea  placeholder="Greetings, Mr. Louis..." class="message-field"></textarea>
+                    <textarea name="message" placeholder="Greetings, Mr. Louis..." class="message-field"></textarea>
                 </div>
                 
                 <button type="submit" class="send-button">Deliver Message</button>
@@ -221,5 +221,7 @@
         <h5>©Louis Miguel Terrago 2026. All Rights Reserved.</h5>
     </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
