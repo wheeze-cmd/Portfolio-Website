@@ -36,6 +36,21 @@ body {
   padding: 0px;
 }
 
+h1, h2, h3, h4, h5, h6 , span, p, div {
+  animation: 1.5s fadeInUp;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 , span{
   font-weight: 700;
   font-family: "Montserrat";
@@ -137,10 +152,17 @@ nav a {
 .hireBtn {
   max-width: 4rem;
   padding: 0.6rem;
-  background: #3A6EA5;
+  background: var(--btn-color);
   color: white;
   border-radius: 0.5rem;
+  border: var(--btn-color) 3px solid;
   margin: 0.5rem;
+  transition: 0.5s ease;
+}
+
+.hireBtn:hover{
+  color: var(--font-color);
+  background-color: white;
 }
 
 video {
@@ -201,14 +223,20 @@ video {
 }
 
 .button {
+  text-align: center;
   width: 10rem;
   color: white;
   padding: 0.5rem;
   border-radius: 0.8rem;
-  background-color: #3A6EA5;
-  border: #3A6EA5 3px solid;
+  background-color: var(--btn-color);
+  border: var(--btn-color) 3px solid;
   text-decoration: none;
   transition: 0.5s ease;
+}
+
+.button:hover {
+  background-color: white;
+  color: var(--font-color);
 }
 
 .hidebtn {
@@ -270,7 +298,6 @@ video {
     height: 100%;
     z-index: -1;
     padding-top: 4rem;
-    border: 1px solid black;
   }
 
   .hero {
@@ -732,6 +759,13 @@ summary {
   border-radius: 0.5rem;
   text-decoration: none;  
   margin: 3rem;
+  border: var(--btn-color) 3px solid;
+  transition: 0.5s ease;
+}
+
+.git-btn:hover {
+  color: var(--font-color);
+  background-color: white;
 }
 
 @media (min-width: 768px){
