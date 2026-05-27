@@ -20,3 +20,16 @@ form.addEventListener("submit", (e) => {
     alert("Failed to send.");
   });
 });
+
+const menuToggle = document.getElementById("burger");
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+
+        setTimeout(() => {
+            menuToggle.checked = false;
+        }, 100);
+
+    });
+});
