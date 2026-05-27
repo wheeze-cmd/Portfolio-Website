@@ -15,7 +15,7 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf") format('truetype');
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -155,14 +155,19 @@ nav a {
   background: var(--btn-color);
   color: white;
   border-radius: 0.5rem;
-  border: var(--btn-color) 3px solid;
   margin: 0.5rem;
   transition: 0.5s ease;
 }
 
 .hireBtn:hover{
-  color: var(--font-color);
-  background-color: white;
+  color: white;
+  background-color: #193968;
+}
+
+.hireBtn:active {
+  background-color: #5978a5;
+  color: #193968;
+  transform: translateY(2px);
 }
 
 video {
@@ -229,14 +234,19 @@ video {
   padding: 0.5rem;
   border-radius: 0.8rem;
   background-color: var(--btn-color);
-  border: var(--btn-color) 3px solid;
   text-decoration: none;
   transition: 0.5s ease;
 }
 
-.button:hover {
-  background-color: white;
-  color: var(--font-color);
+.button:hover{
+  color: white;
+  background-color: #193968;
+}
+
+.button:active {
+  background-color: #5978a5;
+  color: #193968;
+  transform: translateY(2px);
 }
 
 .hidebtn {
@@ -402,16 +412,22 @@ video {
 }
 
 .download-btn {
-  border: var(--btn-color) 3px solid;
   background-color: var(--btn-color);
   color: white;
   padding: 0.6rem;
   border-radius: 0.5rem;
+  transition: 0.5s ease;
 }
 
-.download-btn:hover {
-  color: var(--font-color);
-  background-color: white;
+.download-btn:hover{
+  color: white;
+  background-color: #193968;
+}
+
+.download-btn:active {
+  background-color: #5978a5;
+  color: #193968;
+  transform: translateY(2px);
 }
 
 .demoreel {
@@ -660,14 +676,22 @@ summary {
   background-color: var(--btn-color);
   color: white;
   border-radius: 0.8rem;
-  border: var(--btn-color) 0.2rem solid;
   font-size: 1rem;
+  transition: 0.5s ease;
+  border:none;
 }
 
-.send-button:hover {
-  background-color: white;
-  color: var(--btn-color);
+.send-button:hover{
+  color: white;
+  background-color: #193968;
 }
+
+.send-button:active {
+  background-color: #5978a5;
+  color: #193968;
+  transform: translateY(2px);
+}
+
 
 @media (min-width: 768px){
   .about-container {
@@ -774,6 +798,17 @@ summary {
   text-decoration: none;
 }
 
+.work-btn:hover{
+  color: white;
+  background-color: #193968;
+}
+
+.work-btn:active {
+  background-color: #5978a5;
+  color: #193968;
+  transform: translateY(2px);
+}
+
 .git-btn {
   font-size: var(--fs-p);
   display: flex;
@@ -784,14 +819,21 @@ summary {
   border-radius: 0.5rem;
   text-decoration: none;  
   margin: 3rem;
-  border: var(--btn-color) 3px solid;
   transition: 0.5s ease;
 }
 
-.git-btn:hover {
-  color: var(--font-color);
-  background-color: white;
+.git-btn:hover{
+  color: white;
+  background-color: #193968;
 }
+
+.git-btn:active {
+  background-color: #5978a5;
+  color: #193968;
+  transform: translateY(2px);
+}
+
+
 
 @media (min-width: 768px){
   .work-container {
